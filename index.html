@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loop</title>
+</head>
+<body>
+
+    <div id="show"></div>
+  <h1><a href="Ass.html" style="display: flex; justify-content: center; align-items: center; color: rgb(43, 255, 0);">ASSIGNMENT</a></h1>
+
+    
+    <script>
+        // for (let index = 10; index <=1; index--) {
+        //     console.log(index);
+        // }
+
+        // for(i=100; i>=1; i--){
+        //     console.log(i);
+        // }
+
+        for(i=1; i<=100; i++){
+            // console.log(`${i} is a number`);
+    if (i%3==0 && i% 5==0 && i%2==0)  {
+       show.innerHTML += `<h3 style="color: black;" align="center">${i} is fizzbuzz & even</h3>`
+    } else if (i%3==0 && i% 5==0) {
+        show.innerHTML += `<h3 style="color: gold;" align="center">${i} is fizzbuzz & odd</h3>`
+    }
+     else if (i%3==0 && i%2==0){
+        show.innerHTML += `<h3 style="color: blue;" align="center">${i} is fizz & even</h3>`
+    } else if (i%3==0){
+        show.innerHTML += `<h3 style="color: purple;" align="center">${i} is fizz & odd</h3>`
+    } else if (i%5==0 && i%2==0){
+        show.innerHTML += `<h3 style="color: yellow;" align="center">${i} is buzz & even</h3>`
+    } else if (i%5==0){
+        show.innerHTML += `<h3 style="color: pink;" align="center">${i} is buzz & odd</h3>`
+    }
+     else if (i%2==0) {
+                show.innerHTML += `<h3 style="color: yellowgreen;" align="center">${i} is even</h3>`
+      console.log(i + ' is even.')
+    }
+     else {
+      console.log( i + ' is odd.');
+      show.innerHTML += `<h3 style="color: red;" align="center">${i} is odd</h3>`
+    } 
+    
+    // if (i%3==0 && i% 5==0) {
+    //   show.innerHTML = 'FizzBuzz';
+    // } else if (i%3==0 ) {
+    //   show.innerHTML = 'Fizz';
+    // } else if (i%5==0) {
+    //   show.innerHTML = 'Buzz';
+    // } else {
+    //   show.innerHTML = `<p>${i}The number is neither divisible by 3 nor 5.</p>`
+    // }
+        }
+        
+//         function checkEvenOrOdd() {
+//     const i = document.getElementById('').value;
+//     const answer = document.getElementById('answer');
+  
+//     // Check if the input is a valid number
+//     if (isNaN(i) || i === '') {
+//       answer.innerHTML = 'Please enter a valid number.';
+//       return;
+//     }
+  
+//     const number = parseInt(i);
+  
+//     // Check if the number is even or odd
+//     if (number % 2 === 0) {
+//       answer.innerHTML = number + ' is even.';
+//     } else {
+//       answer.innerHTML = number + ' is odd.';
+//     }
+//   }
+    </script>
+
+
+</body>
+</html>
